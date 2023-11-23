@@ -1,9 +1,9 @@
 import Link from "next/link"
-import { Product } from "../../types"
+import { ProductT } from "../../types"
 import Image from "next/image"
 
 
-const ProductCard = ({ product }: { product: Product }) => {
+const ProductCard = ({ product }: { product: ProductT }) => {
     return (
         <Link href={`/products/${product._id}`}
             className="product-card">
