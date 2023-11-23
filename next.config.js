@@ -1,9 +1,18 @@
-/** @type {import('next').NextConfig} */
+/**
+ * @type {import('next').NextConfig}
+ */
 const nextConfig = {
-    
-    images: {
-      domains: ['m.media-amazon.com']
-    }
-  }
-  
-  module.exports = nextConfig
+  /* config options here */
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'm.media-amazon.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
+  },
+}
+
+module.exports = nextConfig
