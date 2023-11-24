@@ -11,9 +11,9 @@ import {
 import { generateEmailBody, sendEmail } from "@/lib/nodeMailer";
 import { NextResponse } from "next/server";
 
-export const maxDuration = 5
+/* export const maxDuration = 5
 export const dynamic = "force-dynamic"
-export const revalidate = 0
+export const revalidate = 0 */
 
 
 export async function GET() {
