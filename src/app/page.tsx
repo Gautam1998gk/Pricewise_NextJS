@@ -6,6 +6,7 @@ import React from 'react'
 import { ProductT } from '../../types'
 import ProductCard from '@/components/ProductCard'
 
+export const revalidate = 60
 const Home = async () => {
   const allProducts = await getAllProducts()
 
